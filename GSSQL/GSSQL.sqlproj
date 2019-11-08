@@ -57,6 +57,8 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="PublishProfiles" />
+    <Folder Include="PostPublishScripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Genre.sql" />
@@ -72,5 +74,11 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GSSQL.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostPublishScripts\Script.PostDeployment.Genre.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfiles\GSSQL.publish.xml" />
   </ItemGroup>
 </Project>
