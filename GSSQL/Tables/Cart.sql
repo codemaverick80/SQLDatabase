@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Cart]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [DateCreated] DATETIME NOT NULL
+    
+)

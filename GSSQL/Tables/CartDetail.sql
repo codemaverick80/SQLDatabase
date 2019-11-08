@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[CartDetail]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [CartId] UNIQUEIDENTIFIER NULL, 
+    [InventoryId] UNIQUEIDENTIFIER NULL, 
+    CONSTRAINT [FK_CartDetail_ToCart] FOREIGN KEY ([CartId]) REFERENCES [Cart]([Id])
+)
