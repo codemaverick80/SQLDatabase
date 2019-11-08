@@ -6,6 +6,7 @@
     [GenreId] INT NULL, 
     [Rating] INT NULL,
 	[Year] INT NULL,
+	[Label] NVARCHAR(100) NULL,
     [ThumbnailTag] NVARCHAR(15) NULL, 
     [SmallThumbnail] NVARCHAR(50) NULL, 
     [MediumThumbnail] NVARCHAR(50) NULL, 
