@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[Album]
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
-    [AlbumName] NVARCHAR(100) NULL, 
+    [AlbumName] NVARCHAR(200) NULL, 
     [ArtistId] INT NULL, 
     [GenreId] INT NULL, 
     [Rating] INT NULL,
 	[Year] INT NULL,
-	[Label] NVARCHAR(100) NULL,
+	[Label] NVARCHAR(200) NULL,
     [ThumbnailTag] NVARCHAR(15) NULL, 
     [SmallThumbnail] NVARCHAR(50) NULL, 
     [MediumThumbnail] NVARCHAR(50) NULL, 

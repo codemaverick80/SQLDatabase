@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Track]
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
-    [TrackName] NVARCHAR(100) NULL, 
+    [TrackName] NVARCHAR(400) NULL, 
     [AlbumId] INT NULL, 
     [Composer] NVARCHAR(MAX) NULL, 
     [Performer] NVARCHAR(MAX) NULL, 
