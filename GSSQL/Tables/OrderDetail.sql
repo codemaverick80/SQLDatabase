@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[OrderDetail]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [OrderId] INT NULL, 
-    [InventoryId] UNIQUEIDENTIFIER NULL, 
+    [OrderId] INT NOT NULL, 
+    [InventoryId] UNIQUEIDENTIFIER NOT NULL, 
     [Quantity] INT NULL, 
     [UnitPrice] DECIMAL NULL, 
     CONSTRAINT [FK_OrderDetail_ToOrder] FOREIGN KEY ([OrderId]) REFERENCES [Order]([Id]), 

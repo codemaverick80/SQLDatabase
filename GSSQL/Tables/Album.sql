@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Album]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [AlbumName] NVARCHAR(200) NULL, 
-    [ArtistId] INT NULL, 
-    [GenreId] INT NULL, 
+    [ArtistId] INT NOT NULL, 
+    [GenreId] INT NOT NULL, 
     [Rating] INT NULL,
 	[Year] INT NULL,
 	[Label] NVARCHAR(200) NULL,
