@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ArtistBasicInfo]
 (
-	[ArtistId] INT  NOT NULL , 
+	[ArtistId] UNIQUEIDENTIFIER  NOT NULL , 
     [Born] NVARCHAR(100) NULL, 
     [Died] NVARCHAR(100) NULL, 
     [AlsoKnownAs] NVARCHAR(500) NULL, 
