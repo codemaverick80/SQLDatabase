@@ -6,5 +6,9 @@
     [Biography] NVARCHAR(MAX) NULL, 
 	[ThumbnailTag] NVARCHAR(20) NULL, 
     [SmallThumbnail] NVARCHAR(50) NULL, 
-    [LargeThumbnail] NVARCHAR(50) NULL
+    [LargeThumbnail] NVARCHAR(50) NULL,
+	[DateCreated] DATETIME NOT NULL DEFAULT GetUtcdate(), 
+    [CreatedBy] UNIQUEIDENTIFIER NULL, 
+    [DateModified] DATETIME NULL , 
+    [ModifiedBy] UNIQUEIDENTIFIER NULL, 
 )

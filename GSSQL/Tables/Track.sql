@@ -7,5 +7,9 @@
     [Performer] NVARCHAR(MAX) NULL, 
 	[Featuring] NVARCHAR(MAX) NULL,
     [Duration] NVARCHAR(20) NULL, 
+	[DateCreated] DATETIME NOT NULL DEFAULT GetUtcdate(), 
+    [CreatedBy] UNIQUEIDENTIFIER NULL, 
+    [DateModified] DATETIME NULL , 
+    [ModifiedBy] UNIQUEIDENTIFIER NULL, 
     CONSTRAINT [FK_Track_ToAlbum] FOREIGN KEY ([AlbumId]) REFERENCES [Album]([Id])
 )

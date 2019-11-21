@@ -12,6 +12,10 @@
     [MediumThumbnail] NVARCHAR(50) NULL, 
     [LargeThumbnail] NVARCHAR(50) NULL, 
     [AlbumUrl] NVARCHAR(500) NULL, 
+    [DateCreated] DATETIME NOT NULL DEFAULT GetUtcdate(), 
+    [CreatedBy] UNIQUEIDENTIFIER NULL, 
+    [DateModified] DATETIME NULL , 
+    [ModifiedBy] UNIQUEIDENTIFIER NULL, 
     CONSTRAINT [FK_Album_ToGenre] FOREIGN KEY ([GenreId]) REFERENCES [Genre]([Id]), 
     CONSTRAINT [FK_Album_ToArtist] FOREIGN KEY ([ArtistId]) REFERENCES [Artist]([Id])
 )
