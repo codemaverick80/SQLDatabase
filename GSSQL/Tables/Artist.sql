@@ -11,4 +11,5 @@
     [CreatedBy] UNIQUEIDENTIFIER NULL, 
     [DateModified] DATETIME NULL , 
     [ModifiedBy] UNIQUEIDENTIFIER NULL, 
+    [IsDeleted] BIT NOT NULL DEFAULT 0
 )

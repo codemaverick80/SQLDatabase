@@ -2,5 +2,6 @@
 (
 	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
     [GenreName] NVARCHAR(50) NOT NULL, 
-    [Description] NVARCHAR(MAX) NULL
+    [Description] NVARCHAR(MAX) NULL,
+    [IsDeleted] BIT NOT NULL DEFAULT 0
 )

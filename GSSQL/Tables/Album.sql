@@ -16,6 +16,7 @@
     [CreatedBy] UNIQUEIDENTIFIER NULL, 
     [DateModified] DATETIME NULL , 
     [ModifiedBy] UNIQUEIDENTIFIER NULL, 
+    [IsDeleted] BIT NOT NULL DEFAULT 0, 
     CONSTRAINT [FK_Album_ToGenre] FOREIGN KEY ([GenreId]) REFERENCES [Genre]([Id]), 
     CONSTRAINT [FK_Album_ToArtist] FOREIGN KEY ([ArtistId]) REFERENCES [Artist]([Id])
 )

@@ -11,5 +11,6 @@
     [CreatedBy] UNIQUEIDENTIFIER NULL, 
     [DateModified] DATETIME NULL , 
     [ModifiedBy] UNIQUEIDENTIFIER NULL, 
+    [IsDeleted] BIT NOT NULL DEFAULT 0, 
     CONSTRAINT [FK_Track_ToAlbum] FOREIGN KEY ([AlbumId]) REFERENCES [Album]([Id])
 )
